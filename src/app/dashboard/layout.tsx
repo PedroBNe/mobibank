@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -7,12 +7,8 @@ interface DashboardLayoutProps {
 const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   return (
     <div className="dashboard-layout">
-      <aside>
-        {/* Sidebar content */}
-      </aside>
-      <main>
-        {children}
-      </main>
+      <aside>{/* Sidebar content */}</aside>
+      <main>{children}</main>
     </div>
   );
 };
