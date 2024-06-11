@@ -1,3 +1,4 @@
+import Sidebar from "@/components/common/dashboard/Sidebar/Sidebar";
 import React from "react";
 
 interface DashboardLayoutProps {
@@ -6,9 +7,9 @@ interface DashboardLayoutProps {
 
 const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   return (
-    <div className="dashboard-layout">
-      <aside>{/* Sidebar content */}</aside>
-      <main>{children}</main>
+    <div className="flex items-start justify-between">
+      <Sidebar />
+      <main className="w-full h-full">{children}</main>
     </div>
   );
 };
