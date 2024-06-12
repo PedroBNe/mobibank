@@ -14,7 +14,7 @@ export default function SidebarDescktop(props: SidebarProps) {
   const pathname = usePathname();
 
   return (
-    <aside className="flex flex-col w-[270px] max-w-xs h-full min-h-screen border-r bg-[#1A1A1A] text-white">
+    <aside className="flex flex-col w-[270px] max-w-xs h-full min-h-screen bg-[#1A1A1A] text-white">
       <div className="h-full px-3 py-4">
         <div className="flex items-center justify-center">
           <Logo />
